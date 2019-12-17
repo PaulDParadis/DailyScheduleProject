@@ -1,0 +1,9 @@
+hours = input("Hours: ")
+mins = input("Mins: ")
+secs = input("Secs: ")
+o = 0
+h = hours
+m = mins
+t = ':'
+s = secs
+print(str(o)+str(h)+str(t)+str(o)+str(m)+str(t)+str(o)+str(s))
