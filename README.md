@@ -28,7 +28,8 @@ def get_act():
 get_act()
 
 def more_act():
-    get_new = input("Type 'a' to add new activity or 'n' to start list: ")    if get_new == 'a':
+    get_new = input("Type 'a' to add new activity or 'n' to start list: ")    
+    if get_new == 'a':
         get_act()
         more_act()
                                                         1,6           Top
