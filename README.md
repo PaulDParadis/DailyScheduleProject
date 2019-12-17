@@ -1,25 +1,35 @@
-# A prototype for an electronic scheduler
-li_ne = "DAILY SCHEDULE"
-cent_line = li_ne.center(30)
-print(cent_line)
-def time_and_date():
-    day = input("Day: ")
-    date = input(str("Date: "))
-    time = input(str("Time: "))
-    
-time_and_date()
+from datetime import timedelta
+from time import sleep
 
-print("Add an activity. When finished, type 'next' and press enter.")
+def convertseconds(time_in_seconds):
+    """Convert seconds to H:M:S"""
+    return str(timedelta(seconds=time_in_seconds))
 
-def new_act():
-    new_act = input("Add activity: ")
-    activity_time = input("Duration: ")
-    
-new_act()
-while True:
-    act_new = input("Add another activity? 'y' to add, 'next' to start: ")
-    if act_new == 'y':
-        new_act()
-    elif act_new == 'next':
-        print("First activity start: ")
-        break
+def timer_input():
+    HOURS = int(input('Hours: '))
+    MINUTES = int(input('Minutes: '))
+    SECONDS = int(input('Seconds: '))
+
+TIMER = * 60 * 60 + MINUTES * 60 + SECONDS
+print(convertseconds(TIMER))
+
+def count_down():
+    while TIMER > 0:
+        TIMER = TIMER - 1
+        sleep(1)
+        print(convertseconds(TIMER), end = "\r"
+    if TIMER == 0:
+        print('Out of time!')
+
+def get_act():
+    act_new = input("Activity name: "0
+    time_input()
+
+get_act()
+
+def more_act():
+    get_new = input("Type 'a' to add new activity or 'n' to start list: ")    if get_new == 'a':
+        get_act()
+        more_act()
+                                                        1,6           Top
+
