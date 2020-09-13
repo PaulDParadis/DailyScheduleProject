@@ -1,25 +1,15 @@
-# A prototype for an electronic scheduler
-li_ne = "DAILY SCHEDULE"
-cent_line = li_ne.center(30)
-print(cent_line)
-def time_and_date():
-    day = input("Day: ")
-    date = input(str("Date: "))
-    time = input(str("Time: "))
-    
-time_and_date()
+# Daily Schedule Project
 
-print("Add an activity. When finished, type 'next' and press enter.")
+A timer program to track daily tasks.
 
-def new_act():
-    new_act = input("Add activity: ")
-    activity_time = input("Duration: ")
-    
-new_act()
-while True:
-    act_new = input("Add another activity? 'y' to add, 'next' to start: ")
-    if act_new == 'y':
-        new_act()
-    elif act_new == 'next':
-        print("First activity start: ")
-        break
+A work in progress.
+
+## Goals
+
+- Set tasks that you will work on.
+- Start the timer for the tasks.
+- Take notes on what you have done at the end of the timer.
+
+## License
+
+This project is licensed under the GPL-2.0-or-later license.
