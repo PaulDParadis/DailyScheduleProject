@@ -1,19 +1,3 @@
-## Daily Schedule Project
-#
-#A timer program to track daily tasks.
-#
-#A work in progress.
-#
-### Goals
-#
-#- Set tasks that you will work on.
-#- Start the timer for the tasks.
-#- Take notes on what you have done at the end of the timer.
-#
-### License
-#
-#This project is licensed under the GPL-2.0-or-later license.
-
 from datetime import timedelta
 from time import sleep
 
@@ -26,7 +10,7 @@ def timer_input():
     MINUTES = int(input('Minutes: '))
     SECONDS = int(input('Seconds: '))
 
-TIMER = * 60 * 60 + MINUTES * 60 + SECONDS
+TIMER = 60 * 60 + MINUTES * 60 + SECONDS
 print(convertseconds(TIMER))
 
 def count_down():
@@ -48,5 +32,3 @@ def more_act():
     if get_new == 'a':
         get_act()
         more_act()
-                                                        1,6           Top
-
